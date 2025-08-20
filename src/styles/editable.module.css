@@ -1,0 +1,58 @@
+.editable {
+  border: 2px solid #e9efec;
+  border-radius: 5px;
+  transition: all 0.3s;
+  min-height: 100px;
+  max-width: 400px;
+}
+
+.editable:hover {
+  border-color: var(--accent-green);
+  background-color: #f8fffe;
+  box-shadow: 0 0 0 3px rgba(77, 247, 219, 0.1);
+}
+
+.editable:focus {
+  outline: none;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+  background-color: #fff;
+}
+
+.editable_hint::after {
+  content: '✏️ Нажмите для редактирования';
+  position: absolute;
+  margin-left: 5px;
+  background: var(--accent-green);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  animation: fadeInUp 0.5s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .editable {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .editable {
+    max-width: 200px;
+  }
+}

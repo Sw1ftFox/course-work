@@ -1,0 +1,17 @@
+.valid {
+  border-color: var(--accent-green);
+  background-color: rgba(165, 214, 167, 0.1);
+}
+
+.invalid {
+  border-color: var(--accent-red);
+  background-color: rgba(239, 154, 154, 0.1);
+}
+
+.errorMessage {
+  color: var(--accent-red);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
