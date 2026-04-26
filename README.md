@@ -56,11 +56,13 @@ VITE_FIREBASE_APP_ID=ваш_appId
 
 ## 📂 Структура проекта (основные папки)
 
+```
 src/
-├── app/ # Глобальные настройки (store, хуки)
-├── features/ # Функциональные модули (auth, habits)
-├── pages/ # Страницы приложения
-├── services/ # Работа с Firebase
-├── shared/ # Переиспользуемые компоненты (Header, Button, Spinner)
-├── styles/ # CSS Modules
-└── utils/ # Вспомогательные функции
+├── app/        # Глобальные настройки (store, хуки)
+├── features/   # Функциональные модули (auth, habits)
+├── pages/      # Страницы приложения
+├── services/   # Работа с Firebase
+├── shared/     # Переиспользуемые компоненты (Header, Button, Spinner)
+├── styles/     # CSS Modules
+└── utils/      # Вспомогательные функции
+```
